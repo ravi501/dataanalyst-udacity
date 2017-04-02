@@ -12,6 +12,7 @@ def get_all_other_fields(element):
         created["user"] = element.attrib["user"]
         created["uid"] = element.attrib["uid"]
         node["created"] = created
+        node["type"] = element.tag
 
         if "lat" in element.attrib:
             pos = []
